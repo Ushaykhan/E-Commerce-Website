@@ -1,0 +1,198 @@
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\begin{document}
+\begin{titlepage}
+\begin{center}
+    
+
+{\LARGE\bfseries Software Engineering CS303}
+
+\vspace{1cm}
+{\LARGE \textbf{Project Title:}}
+{\LARGE\textbf{E-Commerce Website}}
+
+\vspace{2cm}
+
+{\large \textbf{Presented by}: Muhammad Ushay}
+
+{\large \textbf{Roll No}: 16K-3853}
+
+{\large \textbf{Section}: E}
+
+\vspace{3cm}
+    {\large\textbf{Supervisor}: Sir Ahsan Shah}
+  
+    
+\vspace{2cm}
+     \includegraphics[width=5.5cm]{fastlogo.png}
+     
+
+\vfill
+
+{\itshape National University of Computer and Emerging Sciences, Karachi Campus}
+\end{titlepage}
+
+
+
+\centering
+{\LARGE\bfseries Software Requirement Specifications}
+
+\vspace{1cm}
+
+{\Large\bfseries E-Commerce Website}
+\\ \vspace{1cm}
+
+{\Large\bfseries Version: [1.00]}
+\\ \vspace{1cm}
+ \vspace{1cm}
+
+\begin{tabular}{||c c||}
+ \hline
+\textbf{} & \textbf{}\\ [2.0ex] 
+ \hline
+ Supervisor & Sir Ahsan Shah \\ 
+ \hline
+ Presented By  & Muhammad Ushay K16-3853\\
+
+ \hline
+ Submission Date  & 12-Mar-2019 \\
+ \hline
+
+\end{tabular}
+
+\newpage
+
+{\Large\bfseries Document History}
+
+\begin{tabular}{||c c||}
+ \hline
+\textbf{Name} & \textbf{Role}\\ [0.5ex] 
+ \hline
+Sir Ahsan Shah & Supervisor\\ 
+
+ \hline
+
+
+\end{tabular}
+
+
+
+
+
+\newpage
+{\Large\bfseries Distribution List}
+
+\begin{tabular}{||c c ||}
+ \hline
+\textbf{Name} & \textbf{Role}\\ [0.5ex] 
+ \hline
+ Sir Ahsan Shah & Supervisor\\ 
+
+ \hline
+
+\end{tabular}
+
+\newpage
+{\Large\bfseries Document Sign-Off}
+
+\begin{tabular}{||c c c||}
+ \hline
+\textbf{Version} & \textbf{Sign-off Authority}& \textbf{Sign-off Date}\\ [0.5ex] 
+ \hline
+ -- & Supervisor & --\\ 
+ \hline
+ -- & Co supervisor & -- \\
+
+
+  \hline
+ -- & Supervisor & --\\ 
+ \hline
+-- & Co supervisor & --\\
+ \hline
+
+
+\end{tabular}
+
+\end{center}
+\newpage
+\tableofcontents
+
+\newpage
+\section{Introduction}
+\subsection{Purpose}
+This document is meant to elaborate the features of an online shopping system, so as to serve as a guide to the developers on one hand and a software validation document for the prospective client on the other. This E-Commerce web application is intended to provide complete solutions for vendors as well as customers through a single get way using the internet. It will enable vendors to setup online shops, customer to browse through the shop and purchase them online without having to visit the shop physically. The administration module will enable a system administrator to approve and reject requests the orders that a user places and maintain various lists of shop category and items available.
+	\subsection{ Scope }
+This system allows the customer’s to maintain their cart for add or remove the product over the internet. The customer is provided with the luxury of ordering an item and removing when required. The system provides a flexible approach to online shopping.    
+    \subsection{Overview}
+ This system provides an easy to solution customer’s to buy the       product without go to the shop and also shop owner to sale the product.  
+ \section{General Description}
+ The E-commerce web application enables the customers to browse through the items, and a system administrator to approve and reject requests for items and maintain lists of item categories. Also the developer is designing an online shopping site to manage the items in the shop and also help customers purchase them online without having to visit the shop physically.The web application will use the internet as the sole method for selling goods to its consumers.
+\section{Functional Requirements}
+This section provides requirement overview of the system.Various functional modules that can be implemented by the system will be
+\subsection{Registration}
+If customer wants to buy the product then he/she must be registered, unregistered user can’t go to the shopping cart.
+\subsubsection{Login}
+Customer login's to the system by entering valid user id and password for  the shopping. 
+\subsubsection{Edit Cart}
+Editing cart means the customer after login or registration can make order or cancel order of the product from the shopping cart.   
+\subsubsection{Payment}
+For customer there are many type of secure billing will be prepaid as debit or credit card, post paid as after shipping, check or bank draft. We will primarily be working on the Cash in Delivery service for our customers.   
+\subsubsection{Logout}
+After the payment or surf the product the customer will logged out.
+\section{Interface Requirements}
+\begin{itemize}
+    \item  1. Login Page
+    \item  2. Registration Form
+    \item  3. There will be a screen displaying information about product that the shop having.
+    \item  4.If the customers select the buy button then another screen of shopping cart will be opened.
+    \item  5.After all transaction the system makes the selling report as portable document file (.pdf) and sent to the customer E-mail address.
+
+\subsection{Hardware Interface}
+The System must run over the internet, all the hardware shall require to connect internet will be hardware interface for the system. As for e.g. Modem, WAN – LAN, Ethernet Cross-Cable.
+\subsection{Software Interface}
+The system is on server so it requires the any scripting language i.e PHP.The system require Data Base also for the store the any transaction of the system i.e MYSQL.
+\section{Performance Requirements}
+There is no as such performance requirement to consider in this system because the server request and response is depended on the end user internet connection.
+\section{Design Constraint}
+The system shall be built using a standard web page development tool that conforms to Microsoft’s GUI standards like HTML, XML etc.
+\section{Non Functional Requirements}
+\subsection{Security}
+The system use SSL (secured socket layer) in all transactions that include any confidential customer information.
+The system must automatically log out all customers after a period of inactivity.
+The system should not leave any cookies on the customer’s computer containing the user’s password.
+The system’s back-end servers shall only be accessible to authenticated administrators.
+Sensitive data will be encrypted before being sent over insecure connections like the internet.
+\subsection{Reliability}
+The system provides storage of all databases on redundant computers with automatic switch over.
+The reliability of the overall program depends on the reliability of the separate components. The main pillar of reliability of the system is the backup of the database which is continuously maintained and updated to reflect the most recent changes.
+Thus the overall stability of the system depends on the stability of container and its underlying operating system.
+\subsection{Availability}
+The system should be available at all times, meaning the user can access it using a web browser, only restricted by the down time of the server on which the system runs. In case of a of a hardware failure or database corruption, a replacement page will be shown. Also in case of a hardware failure or database corruption, backups of the database should be retrieved from the server and saved by the administrator. Then the service will be restarted. It means 24 X 7 availability.
+\subsection{Maintainability}
+A commercial database is used for maintaining the database and the application server takes care of the site. In case of a failure, a re-initialization of the program will be done. Also the software design is being done with modularity in mind so that maintainability can be done efficiently.
+\subsection{Portability}
+The application is HTML and scripting language based. So The end-user part is fully portable and any system using any web browser should be able to use the features of the system, including any hardware platform that is available or will be available in the future.
+An end-user is use this system on any OS; either it is Windows or Linux.
+The system shall run on PC, Laptops, and PDA etc.
+
+\section{Operational Scenario}
+The customer wants to buy item. The system shows all product categories to customer. If customer select item then they listed in shopping cart for buying.
+The payment will made with credit card or bank check. If customer wants to cancel the order before shipping then he or she can cancel it.
+Customer can see the buying report on account detail.
+\newpage
+\section{Use Case}
+\begin{center}
+
+\includegraphics[width=16cm]{use case.png}    
+
+\end{center}
+
+\section{References}
+\begin{itemize}
+    \item https://www.scribd.com/doc/40520541/Apni-Dukan-an-Onineline-Shopping-Website
+    \item https://www.websitebuilderexpert.com/ecommerce-website-builders/best/
+    \item https://www.bigcommerce.com/essentials/features/
+\end{itemize}
+
+\end{document}
